@@ -1,0 +1,38 @@
+.nav-bar {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nav-bar h1 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .tab.active, .tab:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .router-outlet {
+    padding: 20px;
+  }
+  

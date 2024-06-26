@@ -1,0 +1,60 @@
+
+.job-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .company-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  
+  .job-details {
+    flex: 1;
+  }
+  .job-details a{
+    text-decoration: none;
+    color: #000;
+  }
+  .job-details a :hover{
+    text-decoration: none;
+    color:rgb(28, 203, 203) ;
+  }
+  
+  .job-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .company-name, .job-reference {
+    margin: 0.25rem 0;
+  }
+  
+  .icon-star {
+    cursor: pointer;
+  }
+  
+  .icon-star.active {
+    color: gold;
+  }
+  .icon-star, .material-icons {
+    cursor: pointer;
+  }
+  
+  .icon-star.active, .material-icons.active {
+    color: gold;
+  }
+  

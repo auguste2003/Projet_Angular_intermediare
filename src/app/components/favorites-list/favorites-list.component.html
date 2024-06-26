@@ -1,0 +1,9 @@
+
+<div class="job-favorite-container">
+  <div *ngFor="let job of favoriteJobs">
+    <app-job [job]="job" (toggleFavorite)="toggleFavorite(job)" [isFavorite]="isFavorite(job.id)"></app-job>
+  </div>
+  
+  <div *ngIf="favoriteJobs.length === 0">No favorite jobs found.</div>
+  
+  

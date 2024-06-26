@@ -1,0 +1,27 @@
+<div class="job-details-container">
+    <div class="back-button">
+      <a [routerLink]="['/jobs']"> <span class="material-icons icon-home">home</span>Back</a>
+     
+    </div>
+    <div class="job-header">
+      <img class="company-logo" [src]="job.companyLogo" alt="{{ job.companyName }} logo">
+      <div class="job-title-section">
+        <h2 class="job-title">{{ job.companyName }} - {{ job.title }}</h2>
+        <div class="job-tags">
+          <span class="tag" >{{ job.types }}</span>
+          <span class="tag" >{{ job.industries }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="job-info">
+      <p><strong>Publish date:</strong> {{ job.publishDate }}</p>
+      <p><strong>Location:</strong> {{ job.location }}</p>
+      <p><strong>Reference:</strong> {{ job.reference }}</p>
+    </div>
+    <div class="job-description">
+      <h3>Description:</h3>
+      <div [innerHTML]="job.description"></div>
+    </div>
+  </div>
+  
+  

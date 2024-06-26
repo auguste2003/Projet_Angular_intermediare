@@ -1,1 +1,16 @@
-{{title}}
+
+<div class="nav-bar">
+  <h1>Find your job</h1>
+  <div class="tabs">
+    <a [routerLink]="['/jobs']" routerLinkActive="active" class="tab">Jobs</a>
+    <a [routerLink]="['/favorites']" routerLinkActive="active" class="tab" (click)="refreshFavorites()" >Favorites</a>
+  </div>
+</div>
+<router-outlet></router-outlet>
+
+
+<!--
+- JobListComponent :  parent 
+Affiche les differentes listes de jibs disponibles 
+ <router-outlet></router-outlet>
+-->

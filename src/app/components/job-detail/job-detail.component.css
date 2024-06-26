@@ -1,0 +1,79 @@
+.job-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .back-button {
+    margin-bottom: 20px;
+  }
+  
+  .back-button a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .icon-home {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  
+  .job-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .company-logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .job-title-section {
+    flex: 1;
+  }
+  
+  .job-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .job-tags {
+    margin-top: 10px;
+  }
+  
+  .tag {
+    display: inline-block;
+    background: #06284b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  
+  .job-info {
+    margin-bottom: 20px;
+  }
+  
+  .job-info p {
+    margin: 5px 0;
+  }
+  
+  .job-description {
+    line-height: 1.6;
+  }
+  
+  .job-description h3 {
+    margin-top: 0;
+  }
+  

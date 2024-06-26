@@ -1,0 +1,13 @@
+<div class="job-container">
+  <div class="job-item">
+    <img class="company-logo" [src]="job.companyLogo" alt="{{ job.companyName }} logo">
+    <div class="job-details">
+      <a [routerLink]="['/job-details', job.id]"><h2 class="job-title">{{ job.title }}</h2></a>
+      <h4 class="company-name">Company: {{ job.companyName }}</h4>
+      <h4 class="job-reference">Reference: {{ job.reference }}</h4>
+    </div>
+    <i class="material-icons" [class.active]="isFavorite" (click)="onToggleFavorite()">star</i>
+  </div>
+</div>
+
+  

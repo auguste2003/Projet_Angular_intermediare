@@ -1,0 +1,8 @@
+
+  <div class="job-list">
+    <div *ngFor="let job of jobs">
+      <app-job [job]="job" (toggleFavorite)="toggleFavorite(job)" [isFavorite]="isFavorite(job.id)"></app-job>
+    </div>
+    
+  </div>
+  
