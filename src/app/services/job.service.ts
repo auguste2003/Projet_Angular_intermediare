@@ -59,9 +59,9 @@ export class JobService {
     const favorites = this.getFavoriteJobsFromLocalStorage();
     const index = favorites.findIndex(fav => fav.id === job.id);
     if (index === -1) {
-      favorites.push(job);
+      favorites.push(job);//  add if not exists 
     } else {
-      favorites.splice(index, 1);
+      favorites.splice(index, 1); // remove if exists 
     }
     localStorage.setItem(this.favoritesKey, JSON.stringify(favorites));
     this.favoritesSubject.next(favorites);

@@ -6,3 +6,41 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  .job-list {
+    padding: 20px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .p-input-icon-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .p-input-icon-left input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .p-input-icon-left .pi-search {
+    position: absolute;
+    left: 10px;
+    font-size: 18px;
+    color: #888;
+  }
+  
+  .no-results {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+  }
+  

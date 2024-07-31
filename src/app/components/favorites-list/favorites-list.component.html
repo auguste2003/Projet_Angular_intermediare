@@ -1,7 +1,15 @@
 
 <div class="job-favorite-container">
-  <div *ngFor="let job of favoriteJobs">
+
+  <span class="p-input-icon-left">
+    <i class="pi pi-search"></i>
+    <input type="text" [formControl]="searchControl" placeholder="Search favorites" pInputText />
+  </span>
+  <div *ngFor="let job of filteredFavoriteJobs$ |async">
     <app-job [job]="job" (toggleFavorite)="toggleFavorite(job)" [isFavorite]="isFavorite(job.id)"></app-job>
+  </div>
+  <div *ngIf="(filteredFavoriteJobs$ | async)?.length === 0" class="no-results">
+    No favorite jobs found.
   </div>
   
   <div *ngIf="favoriteJobs.length === 0">No favorite jobs found.</div>

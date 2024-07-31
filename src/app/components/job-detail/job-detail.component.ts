@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-job-detail',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule,RouterModule], // CommondModule for directives 
   templateUrl: './job-detail.component.html',
   styleUrl: './job-detail.component.css'
 })
