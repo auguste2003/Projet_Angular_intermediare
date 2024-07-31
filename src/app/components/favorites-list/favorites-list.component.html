@@ -5,7 +5,7 @@
     <input type="text" [formControl]="searchControl" placeholder="Search favorites" pInputText />
   </span>
   <div *ngIf="(filteredFavoriteJobs$ | async) as filteredJobs">
-    <div *ngIf="hasNoFilteredFavoriteJobs(filteredJobs) && hasNoFavoriteJobs()" class="no-results">
+    <div *ngIf="hasNoFilteredFavoriteJobs(filteredJobs) || hasNoFavoriteJobs()" class="no-results">
       No favorite jobs found.
     </div>
     <div *ngFor="let job of filteredJobs">
