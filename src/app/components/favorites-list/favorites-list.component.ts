@@ -73,6 +73,13 @@ export class FavoritesListComponent {
     });
   }
 
+  hasNoFavoriteJobs(): boolean {
+    return this.favoriteJobs.length === 0;
+  }
+
+  hasNoFilteredFavoriteJobs(filteredJobs: Job[] | null): boolean {
+    return filteredJobs?.length === 0;
+  }
 
 }
 
